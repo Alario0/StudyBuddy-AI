@@ -1,0 +1,13 @@
+INTRODUÇÃO À INTELIGÊNCIA ARTIFICIAL
+
+Inteligência artificial (IA) é uma área da computação que desenvolve sistemas capazes de realizar tarefas associadas à inteligência humana, como reconhecer padrões e processar linguagem.
+
+Aprendizado de máquina (machine learning) é um subcampo da IA no qual algoritmos aprendem padrões a partir de dados. No aprendizado supervisionado, exemplos de treinamento incluem rótulos esperados. No aprendizado não supervisionado, o algoritmo busca estruturas nos dados sem rótulos fornecidos.
+
+Redes neurais artificiais são modelos computacionais compostos por unidades interconectadas organizadas em camadas. O perceptron simples pode aprender funções linearmente separáveis, como AND e OR, mas não representa sozinho a função XOR. Uma rede multicamadas (MLP) com camada oculta e ativação não linear pode aprender XOR.
+
+RAG significa Retrieval-Augmented Generation, ou geração aumentada por recuperação. O processo recupera trechos relevantes de uma base documental e os inclui como contexto de um modelo de linguagem. Isso ajuda a produzir respostas fundamentadas nos documentos, embora não elimine completamente as alucinações.
+
+Embeddings representam textos como vetores numéricos. Uma base vetorial, como FAISS, permite buscar trechos semanticamente similares à pergunta do usuário.
+
+LangChain é um framework que auxilia na composição de aplicações com modelos de linguagem, prompts, recuperadores e fluxos de processamento. Streamlit permite construir interfaces web interativas em Python.

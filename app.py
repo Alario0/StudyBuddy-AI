@@ -27,7 +27,13 @@ if "file_count" not in st.session_state:
 
 with st.sidebar:
     st.header("⚙️ Configurações")
-    api_key = st.text_input("Chave da API Gemini", value=os.getenv("GOOGLE_API_KEY", ""), type="password", help="Crie gratuitamente em aistudio.google.com")
+    api_key = st.secrets.get("GOOGLE_API_KEY", os.getenv("GOOGLE_API_KEY", ""))
+
+    if api_key:
+        st.success("🔒 API Gemini configurada!")
+    else:
+        st.error("Chave Gemini não configurada.")
+
     model = st.text_input("Modelo Gemini", value=os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite"))
     st.divider()
     st.header("📄 Seus materiais")
